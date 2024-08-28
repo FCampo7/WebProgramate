@@ -5,10 +5,12 @@
 		<script src="src/script.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+		<link rel="stylesheet" href="src/style.css">
 	</head>
 	<body>
+
 		<!-- Nav -->
-		<nav class="navbar" role="navigation" aria-label="main navigation">
+		<nav class="navbar" role="navigation" aria-label="main navigation" id="navegator">
 			<div class="navbar-brand">
 			  <a class="navbar-item" href="#">
 				<h1 class="title is-4">Progra🧉</h1>
@@ -24,7 +26,7 @@
 		  
 			<div id="navbarBasicExample" class="navbar-menu">
 			  <div class="navbar-start">
-				<a class="navbar-item" href="#Cursos">
+				<a class="navbar-item" href="#">
 					Home
 				</a>
 
@@ -49,6 +51,16 @@
 			  </div>
 			</div>
 		</nav>
+		
+		<!-- Hero -->
+		<section class="hero is-info is-fullheight">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">Progra🧉</h1>
+					<h2 class="subtitle">Aprende a programar con nosotros</h2>
+				</div>
+			</div>
+		</section>
 
 		<!-- Cuerpo -->
 		<section class="container">
@@ -93,6 +105,64 @@
 			<section class="section" id="About">
 					<h1 class="title">Acerca de</h1>
 					<p class="subtitle">Conoce más sobre nosotros</p>
+					<div class="columns">
+						<div class="column">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">Profesor</p>
+									<p class="subtitle">...</p>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">Profesor</p>
+									<p class="subtitle">...</p>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">Profesor</p>
+									<p class="subtitle">...</p>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">Profesor</p>
+									<p class="subtitle">...</p>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 
 			<!-- Contacto -->
@@ -120,6 +190,13 @@
 				</div>
 			</section>
 		</section>
+
+		<!-- Boton flotante para volver al Top -->
+		<button class="button is-info" onclick="topFunction()" id="myBtn" title="Go to top">
+			<span class="icon">
+				<i class="fas fa-arrow-up"></i>
+			</span>
+		</button>
 		
 		<!-- Footer -->
 		<footer class="footer">
