@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 	<head>
 		<title>CódigoCAFE☕️</title>
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -9,6 +10,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 		<link rel="stylesheet" href="src/style.css">
 	</head>
+
 	<body>
 
 		<!-- Nav -->
@@ -28,19 +30,21 @@
 		  
 			<div id="navMenu" class="navbar-menu">
 			  <div class="navbar-start">
-				<a class="navbar-item" href="#">
+
+				<!-- la clase ni es para que funcione bien el menu -->
+				<a class="navbar-item ni" href="#">
 					Home
 				</a>
 				
-				<a class="navbar-item" href="#Cursos">
+				<a class="navbar-item ni" href="#Cursos">
 					Cursos
 				</a>
 		  
-				<a class="navbar-item" href="#About">
+				<a class="navbar-item ni" href="#About">
 					About
 				</a>
 
-				<a class="navbar-item" href="#Contacto">
+				<a class="navbar-item ni" href="#Contacto">
 					Contacto
 				</a>
 			  </div>
@@ -62,37 +66,117 @@
 			
 			<!-- Cursos -->
 			<section class="section" id="Cursos">
+
 				<h1 class="title">Nuestros cursos</h1>
 				<p class="subtitle">Ofrecemos variedad de <strong>Cursos</strong> para que te desarrolles en tu vida profesional. Ademas de <strong>Clases particulares</strong> para que puedas cumplir todos tus <strong>objetivos</strong>.</p>
-				<div class="columns">
-					<div class="column">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-2by1">
-									<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title">C/C++</p>
-								<p class="subtitle">Clase particular</p>
-								<p>Lunes y Miércoles</p>
-							</div>
-						</div>
-					</div>
-					<div class="column">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-2by1">
-									<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title">Python</p>
-								<p class="subtitle">Clase particular</p>
-								<p>Martes y Jueves</p>
+				
+				<div class="fixed-grid has-3-cols">
+					<div class="grid">
+
+						<!-- C/C++ -->
+						<div class="cell">
+							<div class="card" id="myModal" data-target="mC">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">C/C++</p>
+									<p class="subtitle">Clase particular</p>
+									<p>Lunes y Miércoles</p>
+								</div>
 							</div>
 						</div>
+						
+						<!-- Python -->
+						<div class="cell">
+							<div class="card" id="myModal" data-target="mP">
+								<div class="card-image">
+									<figure class="image is-2by1">
+										<img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<p class="title">Python</p>
+									<p class="subtitle">Clase particular</p>
+									<p>Martes y Jueves</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
+				</div>
+
+				<!-- Modals Cursos -->
+				<div class="modals">
+
+					<!-- C/C++ -->
+					<div class="modal" id="mC">
+						<div class="modal-background"></div>
+						<div class="modal-card">
+							<header class="modal-card-head">
+								<p class="modal-card-title">C/C++</p>
+								<button class="delete" aria-label="close"></button>
+							</header>
+							<section class="modal-card-body">
+								<p class="subtitle is-5">Clases particulares</p>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Día</th>
+											<th>Horario</th>
+										</tr>
+										<tr>
+											<td>Lunes</td>
+											<td>18:00 - 20:00</td>
+										</tr>
+										<tr>
+											<td>Miércoles</td>
+											<td>18:00 - 20:00</td>
+										</tr>
+									</thead>
+								</table>
+							</section>
+							<footer class="modal-card-foot">
+								<p class="subtitle"></p>
+							</footer>
+						</div>
+					</div>
+
+					<!-- Python -->
+					<div class="modal" id="mP">
+						<div class="modal-background"></div>
+						<div class="modal-card">
+							<header class="modal-card-head">
+								<p class="modal-card-title">Python</p>
+								<button class="delete" aria-label="close"></button>
+							</header>
+							<section class="modal-card-body">
+								<p class="subtitle is-5">Clases particulares</p>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Día</th>
+											<th>Horario</th>
+										</tr>
+										<tr>
+											<td>Martes</td>
+											<td>18:00 - 20:00</td>
+										</tr>
+										<tr>
+											<td>Jueves</td>
+											<td>18:00 - 20:00</td>
+										</tr>
+									</thead>
+								</table>
+							</section>
+							<footer class="modal-card-foot">
+								<p class="subtitle"></p>
+							</footer>
+						</div>
+					</div>
+					
 				</div>
 			</section>
 			
@@ -179,11 +263,12 @@
 						</div>
 					</div>
 					<div class="column is-fluid">
-						<p class="subtitle is-4">Email: <a href="mailto:info@codigocafe.com.ar">info@programate.com.ar</a></p>
+						<p class="subtitle is-4">Email: <a href="mailto:info@codigocafe.com.ar">info@codigocafe.com.ar</a></p>
 						<p class="subtitle is-4">Tel.: <a href="cell:+0000000000000">(+00) 0 0000 00-0000</a></p>
 					</div>
 				</div>
 			</section>
+
 		</section>
 
 		<!-- Boton flotante para volver al Top -->
@@ -224,5 +309,6 @@
 				<p><strong>CódigoCAFE☕️</strong> con <span class="icon"><i class="fas fa-heart"></i></span></p>
 			</div>
 		</footer>
+
 	</body>
 </html>
