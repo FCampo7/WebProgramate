@@ -18,3 +18,7 @@
  #myModal {
 	cursor: pointer;
  }
+
+.card-content .title {
+  white-space: nowrap;
+}
