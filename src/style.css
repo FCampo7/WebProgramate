@@ -23,3 +23,7 @@
 	flex-grow: 1;
   white-space: nowrap;
 }
+
+.is-inline-block {
+	display: inline-block;
+}
