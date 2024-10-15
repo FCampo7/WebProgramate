@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const aboutText = document.getElementById('about-text');
 	let random = Math.floor(Math.random() * aboutArray.length);
 	aboutText.innerHTML = aboutArray[random];
+	console.log(aboutArray[random]);
 });
 // Lógica de la barra de navegación
 document.addEventListener('DOMContentLoaded', () => {
