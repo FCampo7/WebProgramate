@@ -19,7 +19,7 @@
 	cursor: pointer;
  }
 
-.card-content .title {
+.media-content .title {
 	flex-grow: 1;
   white-space: nowrap;
 }
