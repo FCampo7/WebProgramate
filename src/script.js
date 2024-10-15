@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+	const aboutText = document.getElementById('about-text');
+	let random = Math.floor(Math.random() * aboutArray.length);
+	aboutText.innerHTML = aboutArray[random];
+});
 // Lógica de la barra de navegación
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -92,3 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	  }
 	});
   });
+
+
+  let aboutArray = [
+	`¡Hola! Somos un equipo de docentes apasionados por la enseñanza, con experiencia en universidades como Favaloro, UTN, UBA y CAECE.</br> Nos encanta compartir nuestro conocimiento en programación y algoritmos, y nos entusiasma todo lo relacionado con el manejo de datos. Si te apasiona aprender, ¡estás en el lugar correcto!`,
+	"Somos un grupo de docentes con amplia trayectoria en instituciones como la Universidad Favaloro, la UTN, la UBA y la Universidad CAECE.</br> Nuestra pasión es enseñar programación y algoritmos de forma práctica y clara. Además, disfrutamos trabajando con datos para transformar información en conocimiento. Si buscas aprender con expertos, ¡estamos aquí para ayudarte!",
+	"¿Quieres aprender de los mejores? Somos profesores con años de experiencia en universidades de renombre como Favaloro, UTN, UBA y CAECE.</br> Nos encanta transmitir nuestra pasión por la programación, los algoritmos y el mundo de los datos. ¡Acompáñanos a explorar este fascinante mundo y desbloquear tu potencial!",
+	"Con años de experiencia docente en la UBA, UTN, Favaloro y CAECE, sabemos cómo llevarte de lo básico a lo avanzado en programación y manejo de datos.</br> Nos dedicamos a enseñarte algoritmos y técnicas que podrás aplicar de inmediato. Si estás buscando aprender con profesionales comprometidos, ¡aquí estamos para guiarte!"];
+
